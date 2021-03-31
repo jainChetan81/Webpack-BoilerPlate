@@ -15,6 +15,7 @@
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
+		"babel-loader": "^8.2.2",
 		"bootstrap": "^4.3.1",
 		"css-loader": "^2.1.0",
 		"file-loader": "^3.0.1",

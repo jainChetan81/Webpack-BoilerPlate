@@ -3,7 +3,6 @@ var HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
 	mode: "none",
@@ -39,6 +38,10 @@ module.exports = {
 			{
 				test: /\.html$/,
 				use: ["html-loader"],
+			},
+			{
+				test: /\.css$/i,
+				use: ["style-loader", "css-loader"],
 			},
 			{
 				test: /\.scss$/,
